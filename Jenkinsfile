@@ -2,7 +2,7 @@ node("master"){
 
     def image
     def scmVars
-    def tag = env.REPOSITORY_NAME
+    def tag = "ubiimage" //env.REPOSITORY_NAME
    
     currentBuild.result = "SUCCESS"
 
