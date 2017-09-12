@@ -34,7 +34,7 @@ node("master"){
 			}
         } 
         
-		stage('Deploy ros'){
+		stage('Deploy'){
            
 			sh 'chmod u+x ./ecs-deploy'
 
