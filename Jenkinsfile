@@ -2,7 +2,7 @@ node("master"){
 
     def image
     def scmVars
-    def tag = env.IMAGE_NAME
+    def image_name = env.IMAGE_NAME
    
     currentBuild.result = "SUCCESS"
 
@@ -13,7 +13,7 @@ node("master"){
 		}
         
 		stage ('Docker Build'){
-			image = docker.build tag
+			image = docker.build image_name
         }
 
         stage ('Test image'){
@@ -38,7 +38,7 @@ node("master"){
            
 			sh 'chmod u+x ./ecs-deploy'
 
-			//sh './ecs-deploy -r us-east-1 -c ecs-cluster-staging -n ros-service -i 574430013329.dkr.ecr.us-east-1.amazonaws.com/ros -m 0 -M 100 -D 1'
+			//   ./ecs-deploy -r eu-west-1 -c ubidev-cluster -n ubiexpress-service -i 936145964453.dkr.ecr.eu-west-1.amazonaws.com/ubiexpress -m 0 -M 100 -D 1
 			 sh './ecs-deploy' + \
 					' -r ' + env.REPOSITORY_REGION + \
 					' -c ' + env.CLUSTER  + \
