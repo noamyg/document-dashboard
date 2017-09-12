@@ -27,10 +27,10 @@ node("master"){
 			repository_url = 'https://' + env.REPOSITORY_URI
 
 			docker.withRegistry(repository_url, credentials) {
-					docker.image(env.REPOSITORY_NAME).push('latest')
+					docker.image(tag).push('latest')
 			}
 			docker.withRegistry(repository_url, credentials) {
-					docker.image(env.REPOSITORY_NAME).push(repoTag)
+					docker.image(tag).push(repoTag)
 			}
         } 
         
