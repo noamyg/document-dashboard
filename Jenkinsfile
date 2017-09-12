@@ -2,7 +2,7 @@ node("master"){
 
     def image
     def scmVars
-    def tag = "ubiimage" //env.REPOSITORY_NAME
+    def tag = env.IMAGE_NAME
    
     currentBuild.result = "SUCCESS"
 
@@ -43,7 +43,7 @@ node("master"){
 					' -r ' + env.REPOSITORY_REGION + \
 					' -c ' + env.CLUSTER  + \
 					' -n ' + env.SERVICE_NAME + \
-					' -i ' + env.REPOSITORY_URI + '/' + env.REPOSITORY_NAME + \
+					' -i ' + env.REPOSITORY_URI + '/' + env.IMAGE_NAME + \
 					' -m ' + env.MIN_HEALTY_PERCENT + \
 					' -M ' + env.MAX_HEALTY_PERCENT + \
 					' -D ' + env.NO_OF_TASKS
