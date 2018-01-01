@@ -28,7 +28,7 @@ THE SOFTWARE.
 
 @angular/forms@4.4.6 MIT
 
-zone.js@0.8.18 MIT
+zone.js@0.8.19 MIT
 The MIT License
 
 Copyright (c) 2016 Google, Inc.
