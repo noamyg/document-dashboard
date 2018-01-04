@@ -1,4 +1,4 @@
-core-js@2.5.3 MIT
+core-js@2.5.1 MIT
 Copyright (c) 2014-2017 Denis Pushkarev
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -28,7 +28,7 @@ THE SOFTWARE.
 
 @angular/forms@4.4.6 MIT
 
-zone.js@0.8.19 MIT
+zone.js@0.8.18 MIT
 The MIT License
 
 Copyright (c) 2016 Google, Inc.

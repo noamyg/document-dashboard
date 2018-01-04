@@ -1,0 +1,58 @@
+{
+  "header": [
+    {
+      "display": "אתר הבנק",
+      "link": "#",
+      "mobile": true
+    },
+    {
+      "display": "מצא סניף",
+      "link": "#",
+      "mobile": false
+    }
+  ],
+  "footer": [
+    {
+      "display": "בנקאות באינטרנט",
+      "link": "#"
+    },
+    {
+      "display": "פניות הציבור",
+      "link": "#"
+    },
+    {
+      "display": "קוד אתי",
+      "link": "#"
+    },
+    {
+      "display": "גילוי נאות",
+      "link": "#"
+    },
+    {
+      "display": "תנאי שימוש",
+      "link": "#"
+    },
+    {
+      "display": "פרטיות ואבטחה",
+      "link": "#"
+    }
+  ],
+  "other": {
+    "contact": {
+      "display": "צור קשר",
+      "header": "צור קשר",
+      "body": "טקסט טקסט טקסט",
+      "button": "כפתור"
+    },
+    "downloaddocument": {
+      "display": "להורדת מסמכים",
+      "link": "#"
+    },
+    "identity": {
+      "body": "טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט"
+    },
+    "logo": {
+      "link": "#"
+    }
+  }
+}
