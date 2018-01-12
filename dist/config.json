@@ -2,47 +2,47 @@
   "header": [
     {
       "display": "אתר הבנק",
-      "link": "#",
+      "link": "https://www.unionbank.co.il/Igud/Homepage",
       "mobile": true
     },
     {
       "display": "מצא סניף",
-      "link": "#",
+      "link": "https://www.unionbank.co.il/Igud/branches",
       "mobile": false
     }
   ],
   "footer": [
     {
       "display": "בנקאות באינטרנט",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/בנקאות-ישירה"
     },
     {
       "display": "פניות הציבור",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/כללי/פניות-הציבור"
     },
     {
       "display": "קוד אתי",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/כללי/קוד-אתי"
     },
     {
       "display": "גילוי נאות",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/כללי/גילוי-נאות"
     },
     {
       "display": "תנאי שימוש",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/כללי/תנאי-שימוש"
     },
     {
       "display": "פרטיות ואבטחה",
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/כללי/פרטיות-ואבטחה"
     }
   ],
   "other": {
     "contact": {
       "display": "צור קשר",
       "header": "צור קשר",
-      "body": "טקסט טקסט טקסט",
-      "button": "כפתור"
+      "body": "מוקד הלוואות *5757",
+      "button": "סגור"
     },
     "downloaddocument": {
       "display": "להורדת טפסים",
@@ -52,7 +52,10 @@
       "body": "טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט"
     },
     "logo": {
-      "link": "#"
+      "link": "https://www.unionbank.co.il/Igud/Homepage"
+    },
+    "accessibility": {
+      "link": "https://www.unionbank.co.il/Igud/כללי/נגישות/אגוד-נגיש/הצהרת-נגישות"
     }
   }
 }
