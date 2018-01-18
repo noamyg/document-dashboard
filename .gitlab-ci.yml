@@ -1,6 +1,6 @@
 variables:
-   REPOSITORY_URL_TEST: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-express-tst
-   REPOSITORY_URL_PROD: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-express-prod
+   REPOSITORY_URL_TEST: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-ubiexpress-tst
+   REPOSITORY_URL_PROD: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-ubiexpress-prod
    
 stages:
   - deploy
