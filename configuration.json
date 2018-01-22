@@ -10,6 +10,12 @@
       "link": "https://www.unionbank.co.il/Igud/branches",
       "mobile": false
     }
+  ,
+    {
+      "display": "התנתק",
+      "link": "#",
+      "mobile": true
+    }
   ],
   "footer": [
     {
