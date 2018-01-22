@@ -44,6 +44,12 @@
       "body": "מוקד הלוואות *5757",
       "button": "סגור"
     },
+    "internetbanking": {
+      "header": "עליך לאשר בנקאות בתקשרות",
+      "body": "ג",
+      "successbutton": "המשך",
+      "leavebutton": "התנתק"
+    },
     "downloaddocument": {
       "display": "להורדת טפסים",
       "link": "#"
