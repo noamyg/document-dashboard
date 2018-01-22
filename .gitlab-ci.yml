@@ -1,0 +1,45 @@
+variables:
+   REPOSITORY_URL_TEST: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-ubiexpress-tst
+   REPOSITORY_URL_PROD: 266309881961.dkr.ecr.eu-west-1.amazonaws.com/productsite-ubiexpress-prod
+   
+stages:
+  - deploy
+  
+services:
+  - docker:dind
+
+before_script:
+  - apk add --no-cache curl jq python py-pip
+  - pip install awscli
+  
+deploy_test:
+  image: docker:latest
+  stage: deploy
+  script:
+    - $(aws ecr get-login --no-include-email --region eu-west-1)
+    - docker build -t $REPOSITORY_URL_TEST .
+    - docker push $REPOSITORY_URL_TEST
+  when: manual
+  environment:
+    name: Test
+    url: 
+  only:
+    - master
+  tags:
+    - docker
+    
+deploy_prod:
+  image: docker:latest
+  stage: deploy
+  script:
+     - $(aws ecr get-login --no-include-email --region eu-west-1)
+     - docker build -t $REPOSITORY_URL_PROD .
+     - docker push $REPOSITORY_URL_PROD
+  when: manual
+  environment:
+      name: Production
+      url: 
+  only:
+    - master
+  tags:
+    - docker
