@@ -3,44 +3,58 @@
     {
       "display": "אתר הבנק",
       "link": "https://www.unionbank.co.il/Igud/Homepage",
+      "target": "_blank",
       "mobile": true
     },
     {
       "display": "מצא סניף",
       "link": "https://www.unionbank.co.il/Igud/branches",
+      "target": "_blank",
       "mobile": false
     }
   ,
     {
       "display": "התנתק",
       "link": "https://34.242.58.93/vdesk/hangup.php3",
+      "target": "_self",
       "mobile": true
     }
   ],
   "footer": [
     {
       "display": "בנקאות באינטרנט",
-      "link": "https://www.unionbank.co.il/Igud/בנקאות-ישירה"
+      "link": "https://www.unionbank.co.il/Igud/בנקאות-ישירה",
+      "target": "_blank"
+    },
+    {
+      "display": "הלוואה חדשה",
+      "link": "https://loans.unionbank.co.il/homePage",
+      "target": "_blank"
     },
     {
       "display": "פניות הציבור",
-      "link": "https://www.unionbank.co.il/Igud/כללי/פניות-הציבור"
+      "link": "https://www.unionbank.co.il/Igud/כללי/פניות-הציבור",
+      "target": "_blank"
     },
     {
       "display": "קוד אתי",
-      "link": "https://www.unionbank.co.il/Igud/כללי/קוד-אתי"
+      "link": "https://www.unionbank.co.il/Igud/כללי/קוד-אתי",
+      "target": "_blank"
     },
     {
       "display": "גילוי נאות",
-      "link": "https://www.unionbank.co.il/Igud/כללי/גילוי-נאות"
+      "link": "https://www.unionbank.co.il/Igud/כללי/גילוי-נאות",
+      "target": "_blank"
     },
     {
       "display": "תנאי שימוש",
-      "link": "https://www.unionbank.co.il/Igud/כללי/תנאי-שימוש"
+      "link": "https://www.unionbank.co.il/Igud/כללי/תנאי-שימוש",
+      "target": "_blank"
     },
     {
       "display": "פרטיות ואבטחה",
-      "link": "https://www.unionbank.co.il/Igud/כללי/פרטיות-ואבטחה"
+      "link": "https://www.unionbank.co.il/Igud/כללי/פרטיות-ואבטחה",
+      "target": "_blank"
     }
   ],
   "other": {
