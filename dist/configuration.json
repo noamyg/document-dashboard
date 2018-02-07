@@ -24,44 +24,51 @@
     {
       "display": "בנקאות באינטרנט",
       "link": "https://www.unionbank.co.il/Igud/בנקאות-ישירה",
-      "target": "_blank"
-    },
-    {
-      "display": "הלוואה חדשה",
-      "link": "https://loans.unionbank.co.il/homePage",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
     },
     {
       "display": "פניות הציבור",
       "link": "https://www.unionbank.co.il/Igud/כללי/פניות-הציבור",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
     },
     {
       "display": "קוד אתי",
       "link": "https://www.unionbank.co.il/Igud/כללי/קוד-אתי",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
     },
     {
       "display": "גילוי נאות",
       "link": "https://www.unionbank.co.il/Igud/כללי/גילוי-נאות",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
     },
     {
       "display": "תנאי שימוש",
       "link": "https://www.unionbank.co.il/Igud/כללי/תנאי-שימוש",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
     },
     {
       "display": "פרטיות ואבטחה",
       "link": "https://www.unionbank.co.il/Igud/כללי/פרטיות-ואבטחה",
-      "target": "_blank"
+      "target": "_blank",
+      "showbullet": true
+    },
+    {
+      "display": "הלוואה חדשה",
+      "link": "https://loans.unionbank.co.il/homePage",
+      "target": "_blank",
+      "showbullet": false
     }
   ],
   "other": {
     "contact": {
       "display": "צור קשר",
-      "body": "נציגינו זמינים בימים א-ה בין השעות 8:00-14:00<br>יום ו בין השעות 8:00-12:00",
-      "number": "03-5191555"
+      "body": "נציגינו זמינים בימים א-ה בין השעות 7:00-18:00<br>יום ו בין השעות 8:00-14:00",
+      "number": "1700-700-641"
     },
     "internetbanking": {
       "header": "עליך לאשר בנקאות בתקשרות",
@@ -74,7 +81,10 @@
       "link": "#"
     },
     "identity": {
-      "body": "טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט טקסט"
+      "body": "לקבלת העתק מדוח שנתי מפורט/מקוצר לשנים 2015/2016-ת.ז בנקאית, <br> אנא פנו לאגוד ישיר בטלפון: 1700-700-641"
+    },
+    "error": {
+      "subbody": "לחץ כאן לרענון הדף"
     },
     "logo": {
       "link": "https://www.unionbank.co.il/Igud/Homepage"
