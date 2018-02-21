@@ -1,12 +1,14 @@
 {
   "header": [
     {
+      "id" : "bankWebsite",
       "display": "אתר הבנק",
       "link": "https://www.unionbank.co.il/Igud/Homepage",
       "target": "_blank",
       "mobile": true
     },
     {
+      "id" : "findBranch",
       "display": "מצא סניף",
       "link": "https://www.unionbank.co.il/Igud/branches",
       "target": "_blank",
@@ -14,50 +16,58 @@
     }
   ,
     {
+      "id" : "logout",
       "display": "התנתק",
-      "link": "https://34.242.58.93/vdesk/hangup.php3",
+      "link": "/vdesk/hangup.php3",
       "target": "_self",
       "mobile": true
     }
   ],
   "footer": [
     {
+      "id" : "internetBanking",
       "display": "בנקאות באינטרנט",
       "link": "https://www.unionbank.co.il/Igud/בנקאות-ישירה",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "publicInquiries",
       "display": "פניות הציבור",
       "link": "https://www.unionbank.co.il/Igud/כללי/פניות-הציבור",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "ethicalCode",
       "display": "קוד אתי",
       "link": "https://www.unionbank.co.il/Igud/כללי/קוד-אתי",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "fullDisclosure",
       "display": "גילוי נאות",
       "link": "https://www.unionbank.co.il/Igud/כללי/גילוי-נאות",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "termsOfUse",
       "display": "תנאי שימוש",
       "link": "https://www.unionbank.co.il/Igud/כללי/תנאי-שימוש",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "privacyAndSecurity",
       "display": "פרטיות ואבטחה",
       "link": "https://www.unionbank.co.il/Igud/כללי/פרטיות-ואבטחה",
       "target": "_blank",
       "showbullet": true
     },
     {
+      "id" : "newLoan",
       "display": "הלוואה חדשה",
       "link": "https://loans.unionbank.co.il/homePage",
       "target": "_blank",
@@ -76,8 +86,12 @@
       "successbutton": "המשך",
       "leavebutton": "התנתק"
     },
-    "downloaddocument": {
+    "downloaddocuments": {
       "display": "להורדת טפסים",
+      "link": "#"
+    },
+    "downloaddocument": {
+      "display": "הורדת המסמך",
       "link": "#"
     },
     "identity": {
@@ -87,9 +101,15 @@
       "subbody": "לחץ כאן לרענון הדף"
     },
     "logo": {
+      "display": "חזרה לאתר הבנק",
       "link": "https://www.unionbank.co.il/Igud/Homepage"
     },
+    "newloanbanner": {
+      "display": "הגשת בקשה להלוואה חדשה",
+      "link": "https://loans.unionbank.co.il/homePage"
+    },
     "accessibility": {
+      "display" : "הצהרת נגישות",
       "link": "https://www.unionbank.co.il/Igud/כללי/נגישות/אגוד-נגיש/הצהרת-נגישות"
     }
   }
