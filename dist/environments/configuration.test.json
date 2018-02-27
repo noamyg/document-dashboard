@@ -2,7 +2,7 @@
   "header": [
     {
       "id" : "bankWebsite",
-      "display": "אתר בנק מזרחי",
+      "display": "אתר הבנק",
       "link": "https://www.unionbank.co.il/Igud/Homepage",
       "target": "_blank",
       "mobile": true
