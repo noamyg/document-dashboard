@@ -2,7 +2,7 @@
   "header": [
     {
       "id" : "bankWebsite",
-      "display": "3 אתר הבנק",
+      "display": "אתר הבנק",
       "link": "https://www.unionbank.co.il/Igud/Homepage",
       "target": "_blank",
       "mobile": true
