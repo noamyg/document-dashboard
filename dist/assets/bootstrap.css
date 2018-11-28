@@ -54,3 +54,18 @@
     pointer-events: initial;
   }
 }
+.modal-huge .modal-dialog {
+  max-width: 90%;
+}
+.modal-content{
+  animation-name: example;
+  animation-duration: 0.3s;
+}
+.embedded-document{
+  height: 70vh;
+}
+@keyframes example {
+  0%   {transform: scale(0.5)}
+  75%  {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
