@@ -7819,6 +7819,11 @@ a.text-dark:focus,a.text-dark:hover {
 	background: #f9fafe;
 }
 
+.darkgrey-background {
+	background: #d3d3d4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .prompt-body {
 	right: 3%;
 }
@@ -8213,12 +8218,22 @@ ul.list-identity-documents>li {
 .document-unread {
 	background: transparent;
 }
+
+.document-important {
+	background: #E6E6FA;
+}
+
+.btn-large {
+	font-size: 1.5rem;
+}
+
 .btn-igud {
 	color: #fff;
 	background-color: #613295;
 	border-color: #613295;
-	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 }
+
 svg.svg-envelope {
 	width: 2rem;
 	height: 2rem;
@@ -8348,6 +8363,7 @@ svg.svg-envelope.svg-envelope-closed {
 
 .embedded-document {
 	height: 70vh;
+	direction: ltr;
 }
 
 @keyframes example {
@@ -8363,3 +8379,12 @@ svg.svg-envelope.svg-envelope-closed {
 		transform: scale(1)
 	}
 }
+/* 
+.additional-selection {
+	opacity: 0.75;
+	font-size: 0.75em;
+} */
+
+body [class^='mat-'], body [class*=' mat-'] {
+    font-family: "fbti";
+} 
