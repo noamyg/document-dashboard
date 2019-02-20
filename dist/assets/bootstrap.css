@@ -94,7 +94,7 @@ body {
 	line-height: 1.5;
 	color: dimgray;
 	text-align: right;
-	background-color: #f9fafe
+	background-color: #F2F3F4
 }
 
 [tabindex="-1"]:focus {
@@ -415,7 +415,7 @@ template {
 hr {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	border: 0;
+	border: 1;
 	border-top: 1px solid rgba(0,0,0,.1)
 }
 
@@ -4537,7 +4537,8 @@ button.close {
 
 @media (min-width:992px) {
 	.modal-lg {
-		max-width: 800px
+		max-width: 800px;
+		margin: 30px auto
 	}
 }
 
@@ -7816,11 +7817,14 @@ a.text-dark:focus,a.text-dark:hover {
 }
 
 .grey-background {
-	background: #f9fafe;
+	background: #F2F3F4;
 }
 
 .darkgrey-background {
-	background: #d3d3d4;
+	background: #d3d3d4 !important;
+}
+
+.box-shadow {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -7926,7 +7930,7 @@ li.list-item-footer:not(.no-bullet):after {
 	}
 
 	.grey-background-upto-md {
-		background: #f9fafe;
+		background: #F2F3F4;
 	}
 
 	.svg-icon {
@@ -8020,9 +8024,8 @@ li.list-item-footer:not(.no-bullet):after {
 	text-decoration: none;
 }
 
-.link-purple {
+.text-purple {
 	color: #639 !important;
-	font-weight: bold;
 }
 
 input[type="checkbox"].form-check-input {
@@ -8204,13 +8207,13 @@ ul.list-identity-documents>li {
 	.fs-md-18 {
 		font-size: 18px;
 	}
-
-	.tabs-container {
-		padding-top: 25px;
-		border-bottom: 1px solid rgba(0,0,0,.1);
-	}
 }
-
+.navbar-custom {
+    border-bottom: 1px #ccd1d5 solid;
+}
+.tabs-container {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
 .cursor-pointer {
 	cursor: pointer;
 }
@@ -8233,7 +8236,6 @@ ul.list-identity-documents>li {
 	border-color: #613295;
 	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
 }
-
 svg.svg-envelope {
 	width: 2rem;
 	height: 2rem;
@@ -8341,6 +8343,11 @@ svg.svg-envelope.svg-envelope-closed {
 	-webkit-animation: lds-hourglass 2s linear infinite;
 }
 
+/*
+ * This used to disable row clicks on desktop.
+ * When commented out, all of the table row is clickable.
+ */
+/*
 @media all and (min-width: 768px) {
 	ul.list-documents div {
 		pointer-events: none;
@@ -8349,7 +8356,7 @@ svg.svg-envelope.svg-envelope-closed {
 	ul.list-documents a {
 		pointer-events: initial;
 	}
-}
+}*/
 
 .modal-huge .modal-dialog {
 	max-width: 90%;
@@ -8379,12 +8386,30 @@ svg.svg-envelope.svg-envelope-closed {
 		transform: scale(1)
 	}
 }
-/* 
-.additional-selection {
-	opacity: 0.75;
-	font-size: 0.75em;
-} */
-
-body [class^='mat-'], body [class*=' mat-'] {
-    font-family: "fbti";
-} 
+.purple-hover-border{
+	border: 1px solid transparent;
+}
+.purple-hover-border:hover{
+	border: 1px solid #613295;
+}
+.lightpurple-hover-background{
+	background-color: transparent;
+}
+.lightpurple-hover-background:hover{
+	background-color: #e5deed !important;
+}
+.purple-hover-background{
+	background-color: transparent;
+}
+.purple-hover-background:hover{
+	background-color: #dfd6e9 !important;
+}
+.pl-6,.px-6 {
+	padding-right: 4rem!important
+}
+@media all {
+	.printer-page-break { display: none; }
+}
+@media print {
+	.printer-page-break { display: block; page-break-before: always; }
+}
