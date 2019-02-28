@@ -8324,7 +8324,6 @@ svg.svg-envelope.svg-envelope-closed {
 
 .lds-hourglass:after {
 	content: " ";
-	position: absolute;
 	margin: auto;
 	top: 0;
 	left: 0;
@@ -8341,6 +8340,14 @@ svg.svg-envelope.svg-envelope-closed {
 	border-color: #fff transparent #fff transparent;
 	animation: lds-hourglass 2s linear infinite;
 	-webkit-animation: lds-hourglass 2s linear infinite;
+}
+
+.modal-backdrop .lds-hourglass:after {
+	position: absolute;
+}
+
+.igud-hourglass:after{
+	border-color: #613295 transparent #613295 transparent !important;
 }
 
 /*
