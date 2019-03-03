@@ -7930,7 +7930,7 @@ li.list-item-footer:not(.no-bullet):after {
 	}
 
 	.grey-background-upto-md {
-		background: #F2F3F4;
+		background: grey;
 	}
 
 	.svg-icon {
@@ -8346,8 +8346,8 @@ svg.svg-envelope.svg-envelope-closed {
 	position: absolute;
 }
 
-.igud-hourglass:after{
-	border-color: #613295 transparent #613295 transparent !important;
+.grey-hourglass:after{
+	border-color: #d3d3d4 transparent #d3d3d4 transparent !important;
 }
 
 /*
