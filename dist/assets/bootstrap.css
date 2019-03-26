@@ -8416,7 +8416,9 @@ svg.svg-envelope.svg-envelope-closed {
 }
 @media all {
 	.printer-page-break { display: none; }
+    .printer-only{ display:none; }
 }
 @media print {
 	.printer-page-break { display: block; page-break-before: always; }
+    .printer-only{ display:block;}
 }
