@@ -39,7 +39,7 @@ module.exports.select = async (query : string) => {
     }
 }
 
-export default close = async () => {
+module.exports.close = async () => {
     try {
         await pool.close();
         pool = null;
