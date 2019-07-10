@@ -1,24 +1,37 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
-//import path from 'path'
-//import http from 'http'
-//import bodyParser from 'body-parser'
-//import msp from './routes/msp'
+const bodyParser = require("body-parser");
+const index = require("./routes/index");
+const SqlConnector_1 = require("./controllers/SqlConnector");
+const environment_1 = require("./environments/environment");
 class App {
     constructor() {
-        this.express = express();
-        this.mountRoutes();
-    }
-    mountRoutes() {
-        console.log('yo');
-        const router = express.Router();
-        router.get('/', (req, res) => {
-            res.json({
-                message: 'Hello World!'
+        this.connectToDb = (config) => {
+            let connector = SqlConnector_1.default.getInstance(config);
+            connector.connect();
+        };
+        this.mountRoutes = () => {
+            console.log('Mounting routes...');
+            const router = express.Router();
+            router.use(bodyParser.json());
+            router.use(bodyParser.urlencoded({ extended: false }));
+            router.use('/', index.default);
+            this.express.use('/', router);
+        };
+        this.runServer = () => {
+            this.express.listen(this.port, (err) => {
+                if (err) {
+                    return console.log(err);
+                }
+                return console.log(`Server is listening on ${this.port}`);
             });
-        });
-        this.express.use('/', router);
+        };
+        this.port = process.env.PORT || 3000;
+        this.express = express();
+        this.connectToDb(environment_1.documentServiceDb);
+        this.mountRoutes();
+        this.runServer();
     }
 }
 exports.default = new App().express;

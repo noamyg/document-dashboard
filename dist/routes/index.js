@@ -10,12 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const SqlConnector_1 = require("../controllers/SqlConnector");
-let router = express.Router();
+const router = express.Router();
 /* GET users listing. */
-router.get(`/:reqId/:userId`, function (req, res, next) {
+router.get(`/getOne`, function (req, res, next) {
     return __awaiter(this, void 0, void 0, function* () {
-        let connector = new SqlConnector_1.default;
-        const result = yield connector.select(`select * from entities`);
+        let connector = SqlConnector_1.default.getInstance();
+        const result = yield connector.select(`select * from UserLogins`);
         res.send(JSON.stringify(result.recordset));
     });
 });
@@ -23,4 +23,4 @@ router.get('/', function (req, res, next) {
     res.send('SHalom Route!');
 });
 exports.default = router;
-//# sourceMappingURL=msp.js.map
+//# sourceMappingURL=index.js.map

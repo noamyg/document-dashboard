@@ -2,26 +2,44 @@ import * as express from 'express'
 import * as path from 'path'
 import * as http from 'http'
 import * as bodyParser from 'body-parser'
-import * as msp from '../routes/msp'
+import * as index from './routes/index'
+import SqlConnector, { DbConfig } from './controllers/SqlConnector'
+import { documentServiceDb } from './environments/environment';
+
 class App {
   public express
-
-  constructor () {
+  public pool
+  private port : number
+  
+  constructor() {
+    this.port = process.env.PORT || 3000
     this.express = express()
+    this.connectToDb(documentServiceDb)
     this.mountRoutes()
+    this.runServer()
   }
 
-  private mountRoutes (): void {
+  private connectToDb = (config : DbConfig) =>{
+    let connector = SqlConnector.getInstance(config)
+    connector.connect()
+  }
+
+  private mountRoutes = () : void => {
     console.log('Mounting routes...')
     const router = express.Router()
     router.use(bodyParser.json())
     router.use(bodyParser.urlencoded({ extended: false }))
-    router.get('/', (req, res) => {
-      res.json({
-        message: 'Hello World!'
-      })
-    })
+    router.use('/', index.default)
     this.express.use('/', router)
+  }
+
+  private runServer = () : void => {
+    this.express.listen(this.port, (err : Error) => {
+      if (err) {
+        return console.log(err)
+      }
+      return console.log(`Server is listening on ${this.port}`)
+    })
   }
 }
 
